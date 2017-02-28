@@ -1,0 +1,10 @@
+C:\Development\PeopleSearch\PeopleSearch.Database\bin\Debug\PeopleSearch.Database.dll.config
+C:\Development\PeopleSearch\PeopleSearch.Database\bin\Debug\PeopleSearch.Database.dll
+C:\Development\PeopleSearch\PeopleSearch.Database\bin\Debug\PeopleSearch.Database.pdb
+C:\Development\PeopleSearch\PeopleSearch.Database\bin\Debug\EntityFramework.dll
+C:\Development\PeopleSearch\PeopleSearch.Database\bin\Debug\EntityFramework.SqlServer.dll
+C:\Development\PeopleSearch\PeopleSearch.Database\bin\Debug\EntityFramework.xml
+C:\Development\PeopleSearch\PeopleSearch.Database\bin\Debug\EntityFramework.SqlServer.xml
+C:\Development\PeopleSearch\PeopleSearch.Database\obj\Debug\PeopleSearch.Database.csprojResolveAssemblyReference.cache
+C:\Development\PeopleSearch\PeopleSearch.Database\obj\Debug\PeopleSearch.Database.dll
+C:\Development\PeopleSearch\PeopleSearch.Database\obj\Debug\PeopleSearch.Database.pdb

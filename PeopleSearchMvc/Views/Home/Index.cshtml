@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<!DOCTYPE html>
+
+<html ng-app="homeIndex">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/search.js"></script>
+</head>
+<body>
+<div ng-controller="search">
+    @* Error Messages *@
+    <div class="error-message ng-cloak" ng-if="errorOccurred">Error Occurred. Please Report Issue to the Website Support Team.</div>
+    
+    @* People Search Input Fields *@
+    <div class="input-label">People Search Keyword:</div>
+    <div>
+        <input id="txtSearchKeyword" type="text" ng-model="searchKeyword" name="searchKeyword" ng-keyup="searchForPeople(1);"/>
+    </div>
+    <div class="input-label">Add Delay to Search (ms):</div>
+    <div>
+        <input id="txtAddedMsDelay" type="text" ng-model="addedMsDelay" name="addedMsDelay"/>
+    </div>
+    
+    @* People Search Results *@
+    <div class="ng-cloak" ng-if="searchForPeopleResponse != null">
+        <div ng-if="searchForPeopleResponse.ResultsFound > 0">
+            <div class="results-line">{{searchForPeopleResponse.ResultsFound}} Record(s) Found. Page {{lastRequestedPage}} of {{totalNumberOfPages}}.</div>
+            <div class="clear"></div>
+
+            <div>
+                <div class="people-search-results" ng-repeat="person in searchForPeopleResponse.Peoples">
+                    <div class="person-listing">
+                        <div class="person-image" style="background-image:url('{{person.PictureUrl}}');"></div>
+                        <div class="person-description">
+                            <div class="field-label">Name:</div>
+                            <div class="field-value">{{person.FirstName}} {{person.LastName}}</div>
+                            <div class="field-label">Age:</div>
+                            <div class="field-value">{{person.Age}}</div>
+                            <div class="field-label">Address:</div>
+                            <div class="field-value">{{person.Address.StreetLine1}}</div>
+                            <div class="field-value" ng-if="person.Address.StreetLine2">{{person.Address.StreetLine2}}</div>
+                            <div class="field-value">{{person.Address.City}}, {{person.Address.State}} {{person.Address.Zip}}</div>
+                            <div class="field-label">Interests:</div>
+                            <div class="field-value">{{person.Interests}}</div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            @* Custom Pagination Bar *@
+            <div ng-repeat="pageLink in pageLinks">
+                <div class="page-link" ng-if="pageLink.navFunction == null">{{pageLink.text}}</div>
+                <div class="page-link pl-enabled" ng-if="pageLink.navFunction != null && pageLink.navFunction.isEnabled()">
+                    <a href="" ng-click="pageLink.navFunction.searchForPeople()">{{pageLink.text}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

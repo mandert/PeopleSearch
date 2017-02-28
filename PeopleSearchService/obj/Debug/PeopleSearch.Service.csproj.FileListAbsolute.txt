@@ -1,0 +1,15 @@
+C:\Development\PeopleSearch.Service\bin\Debug\PeopleSearch.Service.dll.config
+C:\Development\PeopleSearch.Service\bin\Debug\PeopleSearch.Service.dll
+C:\Development\PeopleSearch.Service\bin\Debug\PeopleSearch.Service.pdb
+C:\Development\PeopleSearch.Service\obj\Debug\PeopleSearch.Service.dll
+C:\Development\PeopleSearch.Service\obj\Debug\PeopleSearch.Service.pdb
+C:\Development\PeopleSearch\PeopleSearch.Service\bin\Debug\PeopleSearch.Service.dll.config
+C:\Development\PeopleSearch\PeopleSearch.Service\bin\Debug\PeopleSearch.Service.dll
+C:\Development\PeopleSearch\PeopleSearch.Service\bin\Debug\PeopleSearch.Service.pdb
+C:\Development\PeopleSearch\PeopleSearch.Service\obj\Debug\PeopleSearch.Service.dll
+C:\Development\PeopleSearch\PeopleSearch.Service\obj\Debug\PeopleSearch.Service.pdb
+C:\Development\PeopleSearch\PeopleSearch.Service\obj\Debug\PeopleSearch.Service.csprojResolveAssemblyReference.cache
+C:\Development\PeopleSearch\PeopleSearch.Service\bin\Debug\EntityFramework.dll
+C:\Development\PeopleSearch\PeopleSearch.Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Development\PeopleSearch\PeopleSearch.Service\bin\Debug\EntityFramework.xml
+C:\Development\PeopleSearch\PeopleSearch.Service\bin\Debug\EntityFramework.SqlServer.xml
